@@ -13,7 +13,13 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>
+      <body
+        style={{
+          backgroundColor: '#F9F9FB',
+          position: 'relative',
+          minHeight: '100vh',
+        }}
+      >
         <Provider>{children}</Provider>
       </body>
     </html>

@@ -1,6 +1,13 @@
 import { extendTheme } from '@chakra-ui/react';
 
 const themes = extendTheme({
+  styles: {
+    global: {
+      positon: 'relative',
+      backgroundColor: '#F9F9FB',
+      minHeight: '100vh',
+    },
+  },
   colors: {
     netural: {
       10: '#e1e3e7',
