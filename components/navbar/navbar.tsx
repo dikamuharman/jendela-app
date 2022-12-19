@@ -1,23 +1,21 @@
 'use client';
-import { Container, Icon, IconButton } from '@chakra-ui/react';
-import { FiAlignRight } from 'react-icons/fi';
+import { Container, useMediaQuery } from '@chakra-ui/react';
 import JendelaLogo from '../logo/logo';
+import JDrawer from './drawer/drawer';
+import JNav from './nav/nav';
 
 const JNavbar = () => {
+  const [isSmallerThan800] = useMediaQuery('(max-width:48em)', {
+    ssr: true,
+    fallback: true,
+  });
+
   return (
     <>
-      <Container maxW="container.lg">
-        <JendelaLogo />
+      <Container maxW="container.lg" as="header" mt={5}>
+        {isSmallerThan800 ? <JendelaLogo /> : <JNav />}
       </Container>
-      <IconButton
-        icon={<Icon as={FiAlignRight} />}
-        aria-label="Menu"
-        position="absolute"
-        backgroundColor="white"
-        borderRadius={12}
-        bottom={8}
-        right={4}
-      />
+      {isSmallerThan800 && <JDrawer />}
     </>
   );
 };

@@ -6,7 +6,7 @@ import style from './logo.module.css';
 
 const JendelaLogo = () => {
   return (
-    <HStack align="center" mt={4}>
+    <HStack align="center">
       <Image src={JendelaLogoPng} width={52} height={52} alt="Jendela Logo" />
       <VStack align="flex-start">
         <Text
