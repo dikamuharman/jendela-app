@@ -3,7 +3,7 @@ import JLogo from '../logo/logo';
 
 const JNavbarDesktop = () => {
   return (
-    <nav className="md:bg-white bg-transparent rounded-xl px-4 py-2 flex flex-col lg:flex-row justify-between lg:tems-center ">
+    <nav className="md:bg-white bg-transparent rounded-xl md:px-4 py-2 flex flex-col lg:flex-row justify-between lg:tems-center ">
       <JLogo withTitle />
       <div className="md:flex gap-4 items-center hidden self-end lg:self-auto">
         <Link
