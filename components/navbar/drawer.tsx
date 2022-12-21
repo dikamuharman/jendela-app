@@ -8,7 +8,7 @@ const JDrawer = () => {
   return (
     <>
       <button
-        className="w-[55px] h-[55px] bg-white shadow-sm grid place-content-center rounded-xl absolute bottom-[50px] right-4 md:hidden"
+        className="w-[55px] h-[55px] bg-white shadow-sm grid place-content-center rounded-xl fixed bottom-[50px] right-4 md:hidden"
         onClick={() => setOpenDrawer(true)}
       >
         <FiAlignRight size={24} color="#545E6B" />
