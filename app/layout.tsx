@@ -12,7 +12,9 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className="bg-[#F9F9FB] min-h-screen relative">{children}</body>
+      <body className="bg-[#F9F9FB] min-h-screen relative text-netural-90">
+        {children}
+      </body>
     </html>
   );
 }

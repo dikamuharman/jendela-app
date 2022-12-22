@@ -8,7 +8,7 @@ export default function RootLayout({
   return (
     <>
       <JNavbar />
-      <main className="max-w-[768px] w-full px-4 mx-auto">{children}</main>
+      <main className="max-w-[1024px] w-full px-4 mx-auto">{children}</main>
     </>
   );
 }
