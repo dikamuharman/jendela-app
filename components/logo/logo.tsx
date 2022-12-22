@@ -1,26 +1,22 @@
-'use client';
-import { HStack, Text, VStack } from '@chakra-ui/react';
 import Image from 'next/image';
-import JendelaLogoPng from '../../assets/logo.png';
-import style from './logo.module.css';
+import JendelaLogo from '../../assets/logo.png';
 
-const JendelaLogo = () => {
+const JLogo = ({ withTitle = false }: { withTitle?: boolean }) => {
   return (
-    <HStack align="center">
-      <Image src={JendelaLogoPng} width={52} height={52} alt="Jendela Logo" />
-      <VStack align="flex-start">
-        <Text
-          fontWeight="medium"
-          color="netural.90"
-          className={style.logo}
-          mb={0}
-        >
-          Jendela
-        </Text>
-        <span>know your career way</span>
-      </VStack>
-    </HStack>
+    <div className="flex flex-row items-center">
+      <Image src={JendelaLogo} width={44} height={44} alt="Logo" />
+      {withTitle && (
+        <div className="flex flex-col items-start ml-2">
+          <p className="text-base inline-flex flex-col font-medium text-netural-90 mb-0 after:content-[''] after:w-full after:h-[2px] after:bg-primary-50 after:my-0">
+            Jendela
+          </p>
+          <span className="text-[14px] text-netural-30 mt-0">
+            know your career way
+          </span>
+        </div>
+      )}
+    </div>
   );
 };
 
-export default JendelaLogo;
+export default JLogo;

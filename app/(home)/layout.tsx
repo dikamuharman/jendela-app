@@ -1,11 +1,14 @@
-import { ReactNode } from 'react';
 import JNavbar from '../../components/navbar/navbar';
 
-export default function HomeLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <>
       <JNavbar />
-      <main>{children}</main>
+      <main className="max-w-[1024px] w-full px-4 mx-auto">{children}</main>
     </>
   );
 }

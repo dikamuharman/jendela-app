@@ -1,21 +1,15 @@
 'use client';
-import { Container, useMediaQuery } from '@chakra-ui/react';
-import JendelaLogo from '../logo/logo';
-import JDrawer from './drawer/drawer';
-import JNav from './nav/nav';
+
+import JDrawer from './drawer';
+import JNavbarDesktop from './navbar-desktop';
 
 const JNavbar = () => {
-  const [isSmallerThan800] = useMediaQuery('(max-width:48em)', {
-    ssr: true,
-    fallback: true,
-  });
-
   return (
     <>
-      <Container maxW="container.lg" as="header" mt={5}>
-        {isSmallerThan800 ? <JendelaLogo /> : <JNav />}
-      </Container>
-      {isSmallerThan800 && <JDrawer />}
+      <header className="max-w-[1024px] w-full px-4 mx-auto lg:pt-8 md:pt-6 ">
+        <JNavbarDesktop />
+      </header>
+      <JDrawer />
     </>
   );
 };
