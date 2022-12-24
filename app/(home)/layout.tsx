@@ -1,6 +1,6 @@
 import JNavbar from '../../components/navbar/navbar';
 
-export default function RootLayout({
+export default function HomeLayout({
   children,
 }: {
   children: React.ReactNode;

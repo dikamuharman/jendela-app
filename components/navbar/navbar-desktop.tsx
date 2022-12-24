@@ -13,7 +13,7 @@ const JNavbarDesktop = () => {
           Home
         </Link>
         <Link
-          href="/"
+          href="/program-studi"
           className="px-4 py-2 text-sm hover:underline text-netural-50 hover:text-netural-80 transition-color"
         >
           Program studi
@@ -25,7 +25,7 @@ const JNavbarDesktop = () => {
           Cara kontribusi
         </Link>
         <Link
-          href="/"
+          href="/login"
           passHref
           className="bg-primary-50 px-6 py-2 text-white hover:bg-primary-60 transition-colors rounded-lg"
         >

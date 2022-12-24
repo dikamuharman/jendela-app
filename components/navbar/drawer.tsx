@@ -22,10 +22,10 @@ const JDrawer = () => {
         <div className="mb-11">
           <div className="flex gap-3 flex-col items-end w-full">
             <Link href="/">Home</Link>
-            <Link href="/">Program studi</Link>
+            <Link href="/program-studi">Program studi</Link>
             <Link href="/">Cara kontribusi</Link>
             <Link
-              href="/"
+              href="/login"
               passHref
               className="bg-primary-50 px-4 py-2 text-white hover:bg-primary-60 transition-colors rounded-lg"
             >

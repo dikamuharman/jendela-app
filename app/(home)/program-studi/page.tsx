@@ -1,4 +1,4 @@
-import JProgramStudiCard from '../../components/program-studi/card';
+import JProgramStudiCard from '../../../components/program-studi/card';
 
 export default function Home() {
   return (
@@ -17,11 +17,6 @@ export default function Home() {
         <JProgramStudiCard />
         <JProgramStudiCard />
       </section>
-      <div className="w-full flex justify-center my-7">
-        <button className="bg-primary-50 px-6 py-2 text-white hover:bg-primary-60 transition-colors rounded-lg">
-          More
-        </button>
-      </div>
     </>
   );
 }
