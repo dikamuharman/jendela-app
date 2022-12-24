@@ -45,7 +45,9 @@ const JTextfield = ({
     <div className="flex flex-col gap-2 relative">
       <div>
         <p className="capitalize ">{label}</p>
-        <span className="text-xs text-netural-40 ">{helperText}</span>
+        <span className="text-xs text-netural-40 leading-none whitespace-wrap ">
+          {helperText}
+        </span>
       </div>
       <input
         type={setPasswordType()}

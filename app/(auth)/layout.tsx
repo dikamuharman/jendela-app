@@ -7,10 +7,10 @@ export default function HomeLayout({
 }) {
   return (
     <>
-      <main className="max-w-[1024px] w-full px-4 mx-auto ">
-        <div className="h-[100px]" />
+      <main className="max-w-[1024px] w-full md:w-1/3 px-4 mx-auto ">
+        <div className="h-[100px] md:h-[150px]" />
         <JLogo />
-        {children}
+        <section>{children}</section>
       </main>
     </>
   );
