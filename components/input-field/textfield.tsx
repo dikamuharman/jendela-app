@@ -46,7 +46,7 @@ const JTextfield = ({
     <div className="flex flex-col gap-2 relative">
       <div>
         <p className="capitalize ">{name}</p>
-        <span className="text-xs text-netural-40 leading-none whitespace-wrap ">
+        <span className="text-xs text-netural-40 leading-none whitespace-wrap block">
           {helperText}
         </span>
       </div>
