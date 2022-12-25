@@ -19,10 +19,12 @@ const Register = () => {
           register={register}
           label="username"
           type="text"
+          name="username"
           required
           placeholder="your username"
         />
         <JTextfield
+          name="email"
           register={register}
           label="email"
           type="email"
@@ -32,6 +34,7 @@ const Register = () => {
         <JTextfield
           register={register}
           label="password"
+          name="password"
           type="password"
           required
           placeholder="your password"
@@ -40,6 +43,7 @@ const Register = () => {
         <JTextfield
           register={register}
           label="confirm password"
+          name="confirmPassword"
           type="password"
           required
           placeholder="confirm password"

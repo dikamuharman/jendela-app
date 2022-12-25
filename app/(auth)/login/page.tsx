@@ -18,6 +18,7 @@ const SignIn = () => {
         <JTextfield
           register={register}
           label="email"
+          name="email"
           type="email"
           required
           placeholder="your email"
@@ -25,6 +26,7 @@ const SignIn = () => {
         <JTextfield
           register={register}
           label="password"
+          name="password"
           type="password"
           required
           placeholder="your password"

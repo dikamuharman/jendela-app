@@ -5,7 +5,8 @@ import { FiEye, FiEyeOff } from 'react-icons/fi';
 import { FormTypes } from '../../types/form-types';
 
 interface JTextfieldProps {
-  label: Path<FormTypes>;
+  name: Path<FormTypes>;
+  label: string;
   placeholder?: string;
   helperText?: string;
   type: HTMLInputTypeAttribute;
@@ -15,7 +16,7 @@ interface JTextfieldProps {
 }
 
 const JTextfield = ({
-  label,
+  name,
   type,
   placeholder,
   register,
@@ -44,7 +45,7 @@ const JTextfield = ({
   return (
     <div className="flex flex-col gap-2 relative">
       <div>
-        <p className="capitalize ">{label}</p>
+        <p className="capitalize ">{name}</p>
         <span className="text-xs text-netural-40 leading-none whitespace-wrap ">
           {helperText}
         </span>
@@ -55,7 +56,7 @@ const JTextfield = ({
         className={`rounded-lg px-4 h-[44px] ${
           isPasswordType ?? 'pr-10'
         } border-netural-10 border-[1px] focus:border-primary-10 outline-primary-10 transition-colors`}
-        {...register(label, { required })}
+        {...register(name, { required })}
       />
       {isPasswordType && (
         <button
