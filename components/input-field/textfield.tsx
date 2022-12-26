@@ -22,6 +22,7 @@ const JTextfield = ({
   register,
   required = false,
   helperText,
+  label,
 }: JTextfieldProps) => {
   const [toggleInput, setToggleInput] = useState(false);
   const isPasswordType = type === 'password';
@@ -45,7 +46,7 @@ const JTextfield = ({
   return (
     <div className="flex flex-col gap-2 relative">
       <div>
-        <p className="capitalize ">{name}</p>
+        <p className="capitalize ">{label}</p>
         <span className="text-xs text-netural-40 leading-none whitespace-wrap block">
           {helperText}
         </span>
@@ -55,7 +56,7 @@ const JTextfield = ({
         placeholder={placeholder}
         className={`rounded-lg px-4 h-[44px] ${
           isPasswordType ?? 'pr-10'
-        } border-netural-10 border-[1px] focus:border-primary-10 outline-primary-10 transition-colors`}
+        } border-netural-10 border-[1px] focus:border-primary-50 outline-none transition-colors`}
         {...register(name, { required })}
       />
       {isPasswordType && (
