@@ -4,4 +4,9 @@ export type FormTypes = {
   username: string;
   confirmPassword: string;
   suggest: string;
+  titleMateri: string;
+  descriptionMateri: string;
+  reference: string;
+  titleProgramStudi: string;
+  descriptionProgramStudi: string;
 };
